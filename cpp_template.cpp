@@ -17,7 +17,10 @@ using namespace std;
 
 // Output shortcuts
 #define out(x) cout << (x) << endl;
-#define print(arr) for (auto &x : (arr)) cout << x << ' '; cout << '\n'
+#define print(arr)        \
+    for (auto &x : (arr)) \
+        cout << x << ' '; \
+    cout << '\n'
 
 // DP shortcuts
 #define dp1(type, name, n, val) vector<type> name((n), (val))
@@ -27,14 +30,20 @@ const int MOD = 1e9 + 7;
 const int INF = 1e9;
 const ll LINF = 1e18;
 
-int main() {
+int main()
+{
     int t;
     cin >> t;
 
-    while (t--) {
+    while (t--)
+    {
         int n;
         cin >> n;
-
+        vi arr(n);
+        for (int i = 0; i < n; i++)
+        {
+            cin >> arr[i];
+        }
     }
 
     return 0;
